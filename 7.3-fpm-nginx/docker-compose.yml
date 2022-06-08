@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    container_name: php7.3-fpm-nginx
+    image: php7.3-fpm-nginx
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
